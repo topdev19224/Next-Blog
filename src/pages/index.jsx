@@ -34,13 +34,13 @@ const Home = () => {
       {/* <div className='before-left h-screen w-[100%] min-[740px]:w-[50%]'></div> */}
       <div id='left' className='w-[50%] max-[740px]:w-full h-screen min-[740px]:fixed relative'>
         <div className='w-full h-full absolute'>
-          <NavMenu className={`max-[740px]:hidden ${navStatus ? 'toCloseMenu' : navStatus === false ? 'toOpenMenu' : 'originalMenu'}`} />
+          <NavMenu className={`${navStatus ? 'toCloseMenu' : navStatus === false ? 'toOpenMenu' : 'originalMenu'}`} />
           <div className='logo w-full h-full flex justify-center items-center'>
             <a href="/" className='bg-white p-1'>
               <img src="assets/images/logo.jpg" alt="logo" width={150} />
             </a>
           </div>
-          <div className="navigation hidden min-[740px]:block right-2" onClick={() => setNavStatus(navStatus || navStatus === null ? false : true)}>
+          <div className="navigation right-2" onClick={() => setNavStatus(navStatus || navStatus === null ? false : true)}>
             <a className={navStatus ? `navigation-burger open-nav` : navStatus === false ? 'navigation-burger close-nav' : 'navigation-burger'}>
               <span className="nav-icon mt-[21px] h-[1.5px] w-[24px] absolute bg-[#6df7b4]"></span>
             </a>
