@@ -5,10 +5,10 @@
   background: url('../../public/assets/images/background_1.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  animation-name: left-slide;
+  /* animation-name: left-slide;
   animation-duration: 0.8s;
   animation-delay: 1.8s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 #left a {
@@ -37,7 +37,7 @@
   animation-name: to-down-slide;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
-  animation-delay: 2.5s;
+  animation-delay: 1.2s;
 }
 
 .navigation-burger {
@@ -146,7 +146,7 @@ a.navigation-burger.open-nav:hover .nav-icon::after {
 #right .header {
   right: -200px;
   animation-name: right-slide;
-  animation-delay: 1s;
+  animation-delay: 0.7s;
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
   z-index: 4;
@@ -158,7 +158,7 @@ a.navigation-burger.open-nav:hover .nav-icon::after {
   opacity: 0;
   margin-top: 50px;
   animation-name: to-up-slide;
-  animation-delay: 3.3s;
+  animation-delay: 2s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
@@ -192,10 +192,4 @@ a.navigation-burger.open-nav:hover .nav-icon::after {
 .post-meta li:hover {
   opacity: 1;
   cursor: pointer;
-}
-
-/* media file modal */
-
-#media-modal {
-  animation-delay: 0.5s;
 }
