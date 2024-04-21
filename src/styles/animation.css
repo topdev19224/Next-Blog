@@ -1,0 +1,112 @@
+/* background animation */
+
+@keyframes enlargeAndReduce {
+  0% {
+    transform: scale(1.1);
+    /* Enlarge to 120% of original size */
+  }
+
+  100% {
+    transform: scale(1);
+    /* Back to original size */
+  }
+}
+
+/* left animation */
+
+@keyframes left-slide {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@media (max-width: 740px) {
+  @keyframes left-slide {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes show-bg-white {
+  0% {
+    background: none;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+/* post animation */
+
+@keyframes to-up-slide {
+  0% {
+    opacity: 0;
+    margin-top: 50px
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 30px
+  }
+}
+
+/* navigation animation */
+
+@keyframes to-down-slide {
+  0% {
+    opacity: 0;
+    top: -20px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+/* right animation */
+
+@keyframes right-slide {
+  0% {
+    right: -200px;
+  }
+
+  100% {
+    right: 12px;
+  }
+}
+
+/* navigation menu animation */
+
+@keyframes to-open-menu {
+  0% {
+    opacity: 0;
+    top: -230px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes to-close-menu {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: -230px;
+  }
+}
+
