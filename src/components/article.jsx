@@ -28,7 +28,7 @@ const Article = (props) => {
                         <source src={src} type={`audio/${getExtension()}`} />
                       </audio>
                       : type === 'image'
-                        ? <img className="cursor-pointer" onClick={() => props.func(src)} src={src} alt={props.alt ? props.alt : ''} />
+                        ? <img className="cursor-pointer" onClick={() => props.func(src, props.alt)} src={src} alt={props.alt ? props.alt : ''} />
                         : <></>
                 }
               </div>

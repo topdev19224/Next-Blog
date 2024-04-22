@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 export default function (props) {
   return <>
-    <div id='media-modal' className='fixed inset-0 z-10 w-full h-full'>
+    <div id='media-modal' className={`fixed inset-0 bg-black bg-opacity-70 overflow-auto backdrop-blur z-10 w-full h-full ${props.visiblity ? 'block' : 'hidden'}`} style={{ 'top': props.scrollPosition }}>
       <div className='w-full p-10 h-screen z-10 flex justify-center items-center'>
         <img src={props.src} alt={props.alt} className='z-[11] h-[90%]' />
         <div className='w-full h-full absolute z-10 flex justify-center items-center' onClick={() => props.func('', '')}></div>
