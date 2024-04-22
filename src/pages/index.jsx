@@ -70,7 +70,8 @@ const Home = () => {
                       src={item.src}
                       alt={item.alt ? item.alt : ''}
                       title={item.title ? item.title : ''}
-                      link={item.link ? item.linek : ''}
+                      link={item.link ? item.link : ''}
+                      views={item.views ? item.views : ''}
                       func={item.type === 'image' ? displayMedia : null}
                     />
                   )
@@ -88,7 +89,8 @@ const Home = () => {
                           src={item.src}
                           alt={item.alt ? item.alt : ''}
                           title={item.title ? item.title : ''}
-                          link={item.link ? item.linek : ''}
+                          link={item.link ? item.link : ''}
+                          views={item.views ? item.views : ''}
                           func={item.type === 'image' ? displayMedia : null}
                         /> : <></>
                     )
@@ -105,7 +107,8 @@ const Home = () => {
                           src={item.src}
                           alt={item.alt ? item.alt : ''}
                           title={item.title ? item.title : ''}
-                          link={item.link ? item.linek : ''}
+                          link={item.link ? item.link : ''}
+                          views={item.views ? item.views : ''} 
                           func={item.type === 'image' ? displayMedia : null}
                         /> : <></>
                     )

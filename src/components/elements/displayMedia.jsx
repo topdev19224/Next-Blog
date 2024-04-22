@@ -2,11 +2,28 @@ import React from 'react'
 
 export default function (props) {
   return <>
-    <div className='fixed inset-0 z-10'>
-      <div id='media-modal' className='w-full p-10 h-screen z-10 flex justify-center items-center'>
+    <div id='media-modal' className='fixed inset-0 z-10 w-full h-full'>
+      <div className='w-full p-10 h-screen z-10 flex justify-center items-center'>
         <img src={props.src} alt={props.alt} className='z-[11] h-[90%]' />
         <div className='w-full h-full absolute z-10 flex justify-center items-center' onClick={() => props.func('', '')}></div>
       </div>
     </div>
   </>
 }
+// export default function Modal(props) {
+//   return (
+//     <>
+//       <dialog
+//         className="fixed left-0 top-0 w-full h-full bg-black bg-opacity-70 z-50 overflow-auto backdrop-blur flex justify-center items-center">
+//         <div className="bg-white m-auto p-8">
+//           <div className="flex flex-col items-center">
+//             <h3>Modal content</h3>
+//             <br />
+//             <button type="button" onClick={() => props.func(props.src, props.alt)} className="bg-red-500 text-white p-2 ">Close Modal</button>
+//           </div>
+
+//         </div>
+//       </dialog>
+//     </>
+//   );
+// }

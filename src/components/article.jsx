@@ -45,7 +45,7 @@ const Article = (props) => {
           <div className='flex flex-row justify-between flex-wrap mt-3'>
             <ul className='post-meta'>
               <li>
-                <a className='notecount open-post'>{props.views ? props.views : ''}</a>
+                <a className='notecount open-post'>{props.views ? `${props.views} views` : ''}</a>
               </li>
             </ul>
             <ul className='share animated'>
