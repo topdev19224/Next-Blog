@@ -17,25 +17,18 @@ const Home = () => {
   const [src, setSrc] = useState('')
   const [alt, setAlt] = useState('')
   const [imageVisible, setImageVisible] = useState(false)
-  const [scrollPosition, setScrollPosition] = useState(0)
 
   const visibleImage = (src, alt) => {
-    handleScroll()
     setSrc(src)
     setAlt(alt)
     setImageVisible(!imageVisible)
-  }
-
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
-    setScrollPosition(scrollY);
   }
 
   return <>
     <Head>
       <title>BLOG | HOME</title>
     </Head>
-    <DisplayMedia src={src} alt={alt} func={visibleImage} scrollPosition={scrollPosition} visiblity={imageVisible} />
+    <DisplayMedia src={src} alt={alt} func={visibleImage} visiblity={imageVisible} />
     <div className='main-container w-full h-screen overflow-auto'>
       {/* <div className='before-left h-screen w-[100%] min-[740px]:w-[50%]'></div> */}
       <div className='container-wrapper h-auto'>
@@ -54,7 +47,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div id='right' className='w-[100%] relative min-[740px]:w-[50%] min-[740px]:absolute h-full right-0 overflow-auto max-[740px]:overflow-hidden'>
+        <div id='right' className='w-[100%] relative min-[740px]:w-[50%] float-right h-full right-0 overflow-auto max-[740px]:overflow-hidden'>
           <div className='right-container w-full min-[350px]:pt-2 px-5 max-[350px]:px-1 h-full'>
             {/* <div className='header fixed top-0 right-0 min-[200px]:pt-1 max-[200px]:w-full'>
             <div className='left-btn min-[200px]:float-left'>
@@ -119,6 +112,7 @@ const Home = () => {
                       )
                   }
                 </div>
+                <div className=' clear-both'></div>
               </div>
             </div>
           </div>
